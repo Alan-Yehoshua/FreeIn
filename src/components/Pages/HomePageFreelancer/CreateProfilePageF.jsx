@@ -5,8 +5,8 @@ import {
     CardDescription,
     CardContent,
     CardFooter,
-  } from "@/components/ui/card";
-  
+  } from "../../ui/card";
+
   import { Label } from "@/components/ui/label";
   import { Input } from "@/components/ui/input";
   import { Textarea } from "@/components/ui/textarea";
