@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 
-const socket = io("https://backendchat-hi9n.onrender.com")
+const socket = io("https://backendchat-hi9n.onrender.com"); // URL del backend en Render
 
 export function Chat({ userId, receiverId, name }) {
   const [message, setMessage] = useState("")
