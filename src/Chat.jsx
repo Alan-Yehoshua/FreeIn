@@ -37,7 +37,7 @@ export function Chat({ userId, receiverId, name }) {
           console.error("Error al cargar mensajes previos:", response.statusText);
         }
       } catch (error) {
-        console.error("Error al cargar mensajes previos:", error);
+        console.error("Error al cargar mensajes previo:", error);
       }
     };
 
