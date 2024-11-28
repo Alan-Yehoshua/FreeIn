@@ -12,7 +12,7 @@ import { Star } from "lucide-react";
 
 import { useEffect } from "react";
 import { usePosts } from "@/Context/PostContext";
-import { UpdatePost } from "../updatePost";
+import { UpdatePost } from "../UpdatePost";
 
 export function CarruselE() {
 
