@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "userImage": "/placeholder.svg?height=40&width=40",
+    "description": "I will design a responsive website for your business",
+    "payment": "$50",
+    "rating": 4.8,
+    "technologies": ["React", "Tailwind CSS"],
+    "category": "Diseño"
+  },
+  {
+    "id": 2,
+    "userImage": "/placeholder.svg?height=40&width=40",
+    "description": "I will create a custom WordPress theme for your blog",
+    "payment": "$80",
+    "rating": 4.9,
+    "technologies": ["WordPress", "PHP", "CSS"],
+    "category": "Edicion"
+  },
+  {
+    "id": 3,
+    "userImage": "/placeholder.svg?height=40&width=40",
+    "description": "I will develop a RESTful API for your application",
+    "payment": "$100",
+    "rating": 4.7,
+    "technologies": ["Node.js", "Express", "MongoDB"],
+    "category": "Desarrollo"
+  },
+  {
+    "id": 4,
+    "userImage": "/placeholder.svg?height=40&width=40",
+    "description": "I will create a mobile app for iOS and Android",
+    "payment": "$150",
+    "rating": 4.6,
+    "technologies": ["React Native", "Firebase"],
+    "category": "Desarrollo"
+  },
+  {
+    "id": 5,
+    "userImage": "/placeholder.svg?height=40&width=40",
+    "description": "I need a developer",
+    "payment": "$100",
+    "rating": 3.6,
+    "technologies": ["React Native", "Firebase", "MVC"],
+    "category": "Marketing"
+  },
+  {
+    "id": 6,
+    "userImage": "/placeholder.svg?height=40&width=40",
+    "description": "I need a content creator",
+    "payment": "$75",
+    "rating": 5.0,
+    "technologies": ["Angular 17", "SQL"],
+    "category": "Diseño"
+  }
+]
