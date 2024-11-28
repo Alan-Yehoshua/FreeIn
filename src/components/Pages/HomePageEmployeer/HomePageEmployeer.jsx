@@ -23,7 +23,7 @@ import { usePosts } from "@/Context/PostContext";
 
 import { AddPost } from "./AddPost";
 import { CarruselE } from "./Carrusel/CarruselE";
-import { CarruselA } from "./Carrusel/Carrusela";
+import { CarruselA } from "./Carrusel/CarruselA";
 
 export function HomePageEmployeer() {
   const navigate = useNavigate();
