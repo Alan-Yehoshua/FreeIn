@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 
-const socket = io("http://localhost:3000")
+const socket = io("https://backendchat-hi9n.onrender.com")
 
 export function Chat({ userId, receiverId, name }) {
   const [message, setMessage] = useState("")
@@ -19,7 +19,7 @@ export function Chat({ userId, receiverId, name }) {
   useEffect(() => {
     const fetchMessages = async () => {
       try {
-        const response = await fetch("http://localhost:3000/get_messages", {
+        const response = await fetch("https://backendchat-hi9n.onrender.com/get_messages", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

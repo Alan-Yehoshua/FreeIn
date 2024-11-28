@@ -6,10 +6,26 @@ import { supabase } from './Supabase-BD/Client.js';
 
 const app = express();
 const server = http.createServer(app);
-const io = new Server(server, { cors: { origin: "*" } });
+
+// Configurar CORS para permitir solicitudes desde Cloudflare Pages
+const corsOptions = {
+  origin: "https://382593ee.freein-91p.pages.dev", // Reemplaza con tu dominio de frontend
+  methods: ["GET", "POST"],
+  credentials: true, // Si necesitas cookies o autenticación
+};
+
+app.use(cors(corsOptions)); // Aplica CORS globalmente al middleware
+
+// Socket.io configuración con CORS
+const io = new Server(server, {
+  cors: {
+    origin: "https://382593ee.freein-91p.pages.dev", // El dominio de tu frontend
+    methods: ["GET", "POST"],
+    credentials: true,
+  },
+});
 
 // Middleware
-app.use(cors());
 app.use(express.json());
 
 // Gestión de sockets
@@ -19,9 +35,7 @@ io.on("connection", (socket) => {
   // Escuchar mensajes
   socket.on("send_message", async (data) => {
     // Guardar en Supabase
-    const { error } = await supabase
-    .from("chats")
-    .insert(data)
+    const { error } = await supabase.from("chats").insert(data);
     console.log(error);
 
     // Emitir el mensaje
@@ -34,8 +48,9 @@ io.on("connection", (socket) => {
   });
 });
 
+
 // Ruta para obtener mensajes previos entre dos usuarios
-app.post("/get_messages", async (req, res) => {
+app.post("/get_messages", async (req, res) => { // La URL no debe incluir el dominio aquí
   const { sender_id, receiver_id } = req.body;
 
   try {
@@ -60,8 +75,7 @@ app.post("/get_messages", async (req, res) => {
   }
 });
 
-
 // Iniciar servidor
 server.listen(3000, () => {
-  console.log("Servidor corriendo en http://  :3000");
+  console.log("Servidor corriendo en http://localhost:3000");
 });
