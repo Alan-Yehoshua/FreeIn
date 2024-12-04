@@ -1,8 +1,19 @@
-# React + Vite
+# Como descargar FreeIn
+### Predescarga
+1. Tener Vite, React y NodeJS descargado
+2. Tener una IDE como Visual Studio Code
+## 1.- Descarga los archivos
+Descarga este repositorio de github en tu computadora
+## 2.- Descarga de dependencias
+1. Descarga TailwindCSS
+2. Descarga los componentes de shadcn/ui
+3. Descarga los componentes de lucid-react
+4. Descarga el framework ExpressJS
+5. Descarga los CORS para permisos de acceso
+6. Descarga las dependencias de supabase
+7. Descarga el web socket socket.io
+##3.- Comandos para iniciar
+1. "npm run dev" para inciar el frontend
+2. "npm run serv" para inicar el backend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# FIN :D
