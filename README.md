@@ -12,7 +12,7 @@ Descarga este repositorio de github en tu computadora
 5. Descarga los CORS para permisos de acceso
 6. Descarga las dependencias de supabase
 7. Descarga el web socket socket.io
-##3.- Comandos para iniciar
+## 3.- Comandos para iniciar
 1. "npm run dev" para inciar el frontend
 2. "npm run serv" para inicar el backend
 
