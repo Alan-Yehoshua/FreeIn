@@ -17,3 +17,4 @@ Descarga este repositorio de github en tu computadora
 2. "npm run serv" para inicar el backend
 
 # FIN :D
+Proyecto para ingenieria de software 1
